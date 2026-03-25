@@ -8,7 +8,7 @@ public class RhymersJUnitTest {
     final int C_IN =888;
     final int CAPPACITY =12;
 
-    @Test
+    @Test 
     public void testCountIn() {
         defaultCountingOutRhymer rhymer = new defaultCountingOutRhymer();
         int testValue = TEST;
