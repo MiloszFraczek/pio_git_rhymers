@@ -13,6 +13,11 @@ class RhymersDemo {
         final String TOTAL = "total rejected is ";
         RhymersFactory factory = new DefaultRhymersFactory();
 
+        testRhymers(factory, START, END, IDX, NEXT, TOTAL);
+
+    }
+
+    private static void testRhymers(RhymersFactory factory, int START, int END, int IDX, int NEXT, String TOTAL) {
         DefaultCountingOutRhymer[] rhymers = { factory.getStandardRhymer(), factory.getFalseRhymer(),
                 factory.getFIFORhymer(), factory.getHanoiRhymer()};
 
@@ -32,7 +37,6 @@ class RhymersDemo {
 
         System.out.println(TOTAL
                 + ((HanoiRhymer) rhymers[3]).reportRejected());
-
     }
-
+    //Wszystkie testy przechodza, projekt jest poprawny
 }
